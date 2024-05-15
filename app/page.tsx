@@ -26,7 +26,7 @@ export default function Home() {
         >
           <img
             id="email"
-            src="/icons/email.svg"
+            src="/tifftorrey/icons/email.svg"
             alt="email"
             className="hover:opacity-70 transition-opacity duration-200 ease-in-out"
           />
@@ -38,7 +38,7 @@ export default function Home() {
         >
           <img
             id="instagram"
-            src="/icons/instagram.svg"
+            src="/tifftorrey/icons/instagram.svg"
             alt="instagram"
             className="hover:opacity-70 transition-opacity duration-200 ease-in-out"
           />
@@ -50,7 +50,7 @@ export default function Home() {
         >
           <img
             id="linkedin"
-            src="/icons/linkedin.svg"
+            src="/tifftorrey/icons/linkedin.svg"
             alt="linkedin"
             className="hover:opacity-70 transition-opacity duration-200 ease-in-out"
           />
@@ -62,7 +62,7 @@ export default function Home() {
         >
           <img
             id="github"
-            src="/icons/github.svg"
+            src="/tifftorrey/icons/github.svg"
             alt="github"
             className="hover:opacity-70 transition-opacity duration-200 ease-in-out"
           />
@@ -74,7 +74,7 @@ export default function Home() {
         >
           <img
             id="spotify"
-            src="/icons/spotify.svg"
+            src="/tifftorrey/icons/spotify.svg"
             alt="spotify"
             className="hover:opacity-70 transition-opacity duration-200 ease-in-out"
           />
@@ -82,13 +82,13 @@ export default function Home() {
       </div>
       <img
         id="blob1"
-        src="/blob1.svg"
+        src="/tifftorrey/blob1.svg"
         alt="blob"
         className="wiggle absolute right-28 top-28"
       ></img>
       <img
         id="blob1"
-        src="/blob3.svg"
+        src="/tifftorrey/blob3.svg"
         alt="blob"
         className="wiggle absolute right-20 top-42"
       ></img>
