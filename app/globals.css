@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* body {
+  background-image: url("/tifftorrey/noise2.png");
+  background-color: #ffffffe3;
+  background-blend-mode: lighten;
+} */
+
 .wiggle {
   animation: animate 4s linear infinite;
   transition: all 5s ease-in-out;
