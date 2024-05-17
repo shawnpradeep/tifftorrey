@@ -106,8 +106,8 @@
   }
 }
 
-/* @media (max-width: 583px) {
+@media (max-width: 354px) or (max-height: 668px) {
   #about_text {
-    width: 65vw;
+    font-size: 10px;
   }
-} */
+}
