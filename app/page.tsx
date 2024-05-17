@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -9,7 +9,6 @@ export default function Home() {
       const face = document.getElementById("face") as HTMLImageElement;
       if (face) {
         let random = Math.floor(Math.random() * 100) + 1;
-        console.log(random);
         if (random >= 95) {
           face.src = "/tifftorrey/blob4.svg";
         } else {
@@ -22,26 +21,26 @@ export default function Home() {
   return (
     <div className="flex items-center justify-start h-screen">
       <div className="p-10 -mt-10">
-        <h1 className="text-[72px] font-semibold">
+        <h1 className="text-[48px] sm:text-[56px] md:text-[64px] lg:text-[72px] font-semibold">
           tiffanie<span className="font-normal">torrey</span>
         </h1>
-        <h2 className="text-xl pl-2 opacity-80 mb-3">
+        <h2 className="text-lg sm:text-xl pl-2 opacity-80 mb-3">
           ecologist, researcher, student at the university of georgia
         </h2>
-        <h2 className="text-xl pl-2 opacity-80">
+        <h2 className="text-lg sm:text-xl pl-2 opacity-80">
           生態学者、研究者、ジョージア大学の学生
         </h2>
       </div>
 
-      <div className="z-10 m-4 mr-5 flex gap-5 absolute top-1 right-1 opacity-80 text-md">
+      <div className="text-sm z-10 m-4 mr-5 flex gap-5 absolute top-1 right-1 opacity-80">
         <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
-          about
+          <Link href="/about">about</Link>
         </span>
         <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
-          research
+          <Link href="https://google.com">research</Link>
         </span>
         <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
-          contact
+          <Link href="https://google.com">contact</Link>
         </span>
       </div>
 
@@ -112,13 +111,14 @@ export default function Home() {
         src="/tifftorrey/blob1.svg"
         alt="blob"
         className="wiggle absolute right-28 top-28"
-      ></img>
+      />
+
       <img
         id="face"
         src="/tifftorrey/blob3.svg"
         alt="blob"
         className="wiggle absolute right-20 top-42"
-      ></img>
+      />
     </div>
   );
 }

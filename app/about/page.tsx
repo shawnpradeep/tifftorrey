@@ -5,8 +5,10 @@ function About() {
   return (
     <div className="flex justify-start h-screen">
       <div className="p-14">
-        <h1 className="text-[74px] font-semibold mb-8 mt-20">about 位</h1>
-        <p className="text-lg pl-2 opacity-80 mb-3 w-[40vw]">
+        <h1 className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[74px] font-semibold mb-8 mt-20">
+          about 位
+        </h1>
+        <p id="about_text" className="pl-2 opacity-80 mb-3 w-[40vw]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -28,15 +30,15 @@ function About() {
         </p>
       </div>
 
-      <div className="z-10 m-4 mr-5 flex gap-5 absolute top-1 right-1 opacity-80 text-md">
-        <span className="font-bold cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
-          about
+      <div className="text-sm z-10 m-4 mr-5 flex gap-5 absolute top-1 right-1 opacity-80">
+        <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out font-bold">
+          <Link href="/about">about</Link>
         </span>
         <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
-          research
+          <Link href="https://google.com">research</Link>
         </span>
         <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
-          contact
+          <Link href="https://google.com">contact</Link>
         </span>
       </div>
 
@@ -104,7 +106,7 @@ function About() {
       </div>
 
       <img
-        id="about"
+        id="about_blob"
         src="/tifftorrey/about_blob.svg"
         alt="blob"
         className="wiggle2 absolute right-32 top-20 w-[700px]"

@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-image: url("/tifftorrey/noise2.png");
-  background-color: #ffffffe3;
-  background-blend-mode: lighten;
-} */
-
 .wiggle {
   animation: animate 4s linear infinite;
   transition: all 5s ease-in-out;
@@ -31,3 +25,89 @@
     transform: translateY(-10px); /* Move up more */
   }
 }
+
+#blob1 {
+}
+
+#face {
+}
+
+@media (max-width: 1250px) {
+  #blob1 {
+    right: 8rem; /* equivalent to 32 */
+    top: 15rem; /* equivalent to 60 */
+    width: 300px;
+    position: absolute;
+  }
+
+  #face {
+    right: 8rem; /* equivalent to 32 */
+    top: 14.5rem; /* equivalent to 58 */
+    width: 300px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 995px) {
+  #blob1,
+  #face {
+    right: 3rem;
+  }
+}
+
+@media (max-width: 925px) {
+  #blob1,
+  #face {
+    display: none;
+  }
+}
+
+#about_blob {
+}
+
+#about_text {
+  font-size: 18px;
+}
+
+@media (max-width: 1250px) {
+  #about_blob {
+    right: 8rem; /* equivalent to 32 */
+    top: 10rem; /* equivalent to 60 */
+    width: 500px;
+    position: absolute;
+  }
+
+  #about_text {
+    font-size: small;
+  }
+}
+
+@media (max-width: 1050px) {
+  #about_blob {
+    right: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #about_blob {
+    right: 5rem;
+    top: 15rem;
+    width: 320px;
+  }
+}
+
+@media (max-width: 770px) {
+  #about_blob {
+    display: none;
+  }
+
+  #about_text {
+    width: 65vw;
+  }
+}
+
+/* @media (max-width: 583px) {
+  #about_text {
+    width: 65vw;
+  }
+} */
