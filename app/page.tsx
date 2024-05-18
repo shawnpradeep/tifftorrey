@@ -33,20 +33,23 @@ export default function Home() {
       </div>
 
       <div className="text-sm z-10 m-4 mr-5 flex gap-5 absolute top-1 right-1 opacity-80">
+        <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out font-bold">
+          <Link href="/">home</Link>
+        </span>
         <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
           <Link href="/about">about</Link>
         </span>
-        <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
+        {/* <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
           <Link href="https://google.com">research</Link>
         </span>
         <span className="cursor-pointer hover:opacity-70 transition-opacity duration-200 ease-in-out">
           <Link href="https://google.com">contact</Link>
-        </span>
+        </span> */}
       </div>
 
       <div className="p-10 flex gap-1 absolute bottom-1 left-1">
         <a
-          href="mailto:contact@shawnpradeep.com"
+          href="mailto:tiffanie.torrey@uga.edu"
           target="_blank"
           rel="noreferrer"
         >
@@ -78,18 +81,6 @@ export default function Home() {
             id="linkedin"
             src="/tifftorrey/icons/linkedin.svg"
             alt="linkedin"
-            className="hover:opacity-70 transition-opacity duration-200 ease-in-out"
-          />
-        </a>
-        <a
-          href="https://www.github.com/shawnpradeep/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            id="github"
-            src="/tifftorrey/icons/github.svg"
-            alt="github"
             className="hover:opacity-70 transition-opacity duration-200 ease-in-out"
           />
         </a>
