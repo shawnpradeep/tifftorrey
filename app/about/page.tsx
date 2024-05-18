@@ -107,7 +107,7 @@ function About() {
 
       <img
         id="about_blob"
-        src="/tifftorrey/about_blob.svg"
+        src="/tifftorrey/about_blob.png"
         alt="blob"
         className="wiggle2 absolute right-32 top-20 w-[700px]"
       ></img>
